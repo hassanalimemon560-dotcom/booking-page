@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Pure Sip</title>
+    <link rel="stylesheet" href="./Booking.css">
+</head>
+<body>
+<header>
+  <h1>💧 Ultra Pure Sip</h1>
+  <p>VIP • Professional Booking & Order System</p>
+</header>
+
+<div class="container">
+
+<!-- LOGIN -->
+<div class="card" id="loginCard">
+  <h2>🔐 Admin Login</h2>
+  <input id="username" placeholder="Username" />
+  <input id="password" type="password" placeholder="Password" />
+  <button onclick="login()">Login</button>
+  <p id="hint"></p>
+  <p><small>Default: admin / 1234</small></p>
+</div>
+
+<!-- MAIN PANEL -->
+<div id="panel" class="hidden">
+
+<div class="card topbar">
+  <strong>Admin Panel</strong>
+  <div>
+    <select onchange="setLang(this.value)">
+      <option value="en">English</option>
+      <option value="ur">Urdu</option>
+      <option value="ru">Roman Urdu</option>
+    </select>
+    <button onclick="logout()" class="danger">Logout</button>
+  </div>
+</div>
+
+<div class="card">
+  <h2 id="t_new">New Order</h2>
+  <input id="name" placeholder="Customer Name" />
+  <input id="mobile" placeholder="Mobile" />
+  <input id="product" placeholder="Product" />
+  <!-- Bottle Size Dropdown -->
+  <select id="size">
+    <option value="">Select Bottle Size</option>
+    <option value="1.5 Liter">1.5 Liter</option>
+    <option value="500 ML">500 ML</option>
+  </select>
+  <!-- Quantity Input -->
+  <input id="quantity" type="number" min="1" placeholder="Quantity" />
+  <!-- Total Price Auto -->
+  <input id="price" placeholder="Total Price (Auto)" readonly />
+  <textarea id="address" placeholder="Address"></textarea>
+  <button onclick="addOrder()">Save Order</button>
+</div>
+
+<div class="card">
+  <h2 id="t_orders">Orders</h2>
+  <p id="report"></p>
+  <div id="orders"></div>
+</div>
+
+</div>
+</div>
+
+    <script src="./Booking.js"></script>
+</body>
+</html>

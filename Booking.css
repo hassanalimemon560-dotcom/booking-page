@@ -1,0 +1,20 @@
+ :root {
+      --primary: #0f172a;
+      --secondary: #020617;
+      --accent: #22c55e;
+      --danger: #ef4444;
+      --bg: #f8fafc;
+    }
+    * { box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { margin:0; background:var(--bg); }
+    header { background:linear-gradient(135deg,var(--secondary),var(--primary)); color:#fff; padding:20px; text-align:center; }
+    .container { max-width:1200px; margin:auto; padding:20px; }
+    .card { background:#fff; border-radius:14px; padding:20px; box-shadow:0 10px 25px rgba(0,0,0,.1); margin-bottom:20px; }
+    h2 { margin-top:0; }
+    input, textarea, button, select { padding:12px; border-radius:8px; border:1px solid #ddd; font-size:15px; }
+    button { background:var(--accent); color:#fff; border:none; font-weight:bold; cursor:pointer; }
+    .danger { background:var(--danger); }
+    .topbar { display:flex; justify-content:space-between; align-items:center; gap:10px; flex-wrap:wrap; }
+    .order { border:1px solid #e5e7eb; border-radius:10px; padding:15px; display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+    .hidden { display:none; }
+    #hint { color:#ef4444; font-size:14px; margin-top:5px; }
