@@ -51,7 +51,29 @@
   <!-- Quantity Input -->
   <input id="quantity" type="number" min="1" placeholder="Quantity" />
   <!-- Total Price Auto -->
-  <input id="price" placeholder="Total Price (Auto)" readonly />
+  <textarea id="address" placeholder="Address"></textarea>
+  <button onclick="addOrder()">Save Order</button>
+</div>
+
+<div class="card">
+  <h2 id="t_orders">Orders</h2>
+  <p id="report"></p>
+  <div id="orders"></div>
+</div>
+<div class="card">
+  <h2 id="t_new">New Order</h2>
+  <input id="name" placeholder="Customer Name" />
+  <input id="mobile" placeholder="Mobile" />
+  <input id="product" placeholder="Product" />
+  <!-- Bottle Size Dropdown -->
+  <select id="size">
+    <option value="">Select Bottle Size</option>
+    <option value="1.5 Liter">1.5 Liter</option>
+    <option value="500 ML">500 ML</option>
+  </select>
+  <!-- Quantity Input -->
+  <input id="quantity" type="number" min="1" placeholder="Quantity" />
+  <!-- Total Price Auto -->
   <textarea id="address" placeholder="Address"></textarea>
   <button onclick="addOrder()">Save Order</button>
 </div>
